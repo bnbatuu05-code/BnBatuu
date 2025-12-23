@@ -1,9 +1,9 @@
-# BnBatuu
-merhaba,Bu benim kanalım, BnBatuu,Bu arada ismim Batu
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BnBatuu Party</title>
+  <meta charset="UTF-8">
+  <title>BnBatuu Partisi</title>
+
   <style>
     body {
       background: black;
@@ -25,7 +25,6 @@ merhaba,Bu benim kanalım, BnBatuu,Bu arada ismim Batu
       position: fixed;
       width: 10px;
       height: 10px;
-      background: yellow;
       top: -10px;
       animation: fall 3s linear infinite;
     }
@@ -36,6 +35,7 @@ merhaba,Bu benim kanalım, BnBatuu,Bu arada ismim Batu
     }
   </style>
 </head>
+
 <body>
 
 <h1>BnBatuu 🔥</h1>
@@ -45,15 +45,13 @@ merhaba,Bu benim kanalım, BnBatuu,Bu arada ismim Batu
 
 <script>
 function party() {
-  // YouTube aç
   window.open("https://www.youtube.com/@PrimeBatu-q9x", "_blank");
 
-  // Konfeti oluştur
   for (let i = 0; i < 50; i++) {
     let c = document.createElement("div");
     c.className = "confetti";
     c.style.left = Math.random() * window.innerWidth + "px";
-    c.style.background = 
+    c.style.background =
       ["red","yellow","blue","green","pink"][Math.floor(Math.random()*5)];
     c.style.animationDuration = (Math.random() * 2 + 1) + "s";
     document.body.appendChild(c);
